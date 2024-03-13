@@ -1,7 +1,8 @@
 # Plan détaillé : Anchoring
 
 - [Plan détaillé : Anchoring](#plan-détaillé--anchoring)
-  - [Résumé](#résumé)
+  - [Résumé (Français)](#résumé-français)
+  - [Résumé (Anglais)](#résumé-anglais)
   - [Introduction](#introduction)
   - [I - Présentation du Projet](#i---présentation-du-projet)
     - [1) Cadre du projet en entreprise](#1-cadre-du-projet-en-entreprise)
@@ -77,10 +78,13 @@
     - [Moi-même](#moi-même)
   - [Conclusion](#conclusion)
 
-## Résumé
+## Résumé (Français)
 
-Ancrage symbolique processus qui transforme des données  en une sémantique intelligente.
-Creer des prédicat pour le task Planner. Knowledgebase ontologique.
+Ancrage symbolique (Anchoring) processus qui transforme des données de Jumeaux numériques (fonctionnel ou géométrique) en une sémantique intelligente à l'aide d'une ontologie. Cette ontologie peut être lue pour donner des prédicats sous la forme *Sujet* *Action* *Complément*. De plus, grâce à un reasonner ontologique on peut vérifier la cohérence de l'ontologie, faire des inférences (créer des relations) et appliquer des règles. On peut ainsi dire que l'Anchoring raisonne et donc que c'est un processus intelligent. Grâce à l'Anchoring, l'ontologie est un savoir sémantique sur lequel d'autres applications peuvent interagir. Dans mon cas d'application, la robotique cognitive, le Task Planner et le jumeau numérique (Digital Twin) interagissent avec l'ontologie. Les Digital Twins permettent de remplir l'ontologie grâce à l'Anchoring (intégrateur), et l'Anchoring peut demander aux Digital Twins des informations supplémentaires si nécessaire. Le Task Planner reçoit les prédicats que fournit l'Anchoring pour créer une liste d'action pour résoudre un objectif. L'Anchoring est temps réel et donc peut s'apercevoir de problème dans les actions. De plus, l'Anchoring est basé sur une ontologie qui est créé avec une upper ontologie pour permettre à ce que ce savoir sémantique soit partageable.
+
+## Résumé (Anglais)
+
+Symbolic anchoring (Anchoring) process that transforms data from Digital Twins (functional or geometric) into intelligent semantics using an ontology. This ontology can be read to give predicates in the form *Subject* *Action* *Complement*. Futhermore, an ontology reasonner can be used to check the consistency of the ontology, make inferences (create relations) and apply rules.Anchoring can therefore be considered an intelligent process. Thanks to Anchoring, the ontology is a semantic knowledge on which other applications can interact. In my case study, cognitive robotics, the Task Planner and the Digital Twin interact with the ontology. The Digital Twins fill in the ontology thanks to the Anchoring (integrator), and the Anchoring can request additional information from the Digital Twins if necessary. The Task Planner receives the predicates provided by the Anchoring to create an action list to solve a goal. Anchoring is real-time, so it can spot problems in actions. Futhemore, Anchoring is based on an ontology that is created with an upper ontology to enable this semantic knowledge to be shared.
 
 ## Introduction
 
