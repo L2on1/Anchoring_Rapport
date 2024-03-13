@@ -146,7 +146,7 @@ mots-clés :
 #### a) Présentation rapide
 
 - Schéma : Perception -> Planning -> Acting
-  - ![Schéma : Perception -> Planning -> Acting](figures\Algo_simple_global.png)
+  - ![Schéma : Perception -> Planning -> Acting](figures/Algo_simple_global.png)
   - Perception : Capteurs -> **Jumeaux numériques** (Géométrique/Fonctionnel)
   - Plannification : ***Anchoring*** -> **Task Planner**
   - Action : Controller -> Actuators
@@ -155,7 +155,7 @@ mots-clés :
   - Place de l'Anchoring
 
 - Schéma : DT -> Anchoring -> Task Planner
-  - ![Schéma : DT -> Anchoring -> Task Planner](figures\Algo_simple_local.png)
+  - ![Schéma : DT -> Anchoring -> Task Planner](figures/Algo_simple_local.png)
   - Anchoring -> Knowledge Base : Ontology + rules
 - Expliquer ce schéma
 
@@ -183,25 +183,25 @@ mots-clés :
   - Setup
   - Run
 - Schema ontologie : class - individues (10/10/23)
-  - ![ontologies Tree](figures\Anchoring_Algorithm-Tree.png)
-  - ![ontologie region](figures\ontology_region.png)
+  - ![ontologies Tree](figures/Anchoring_Algorithm-Tree.png)
+  - ![ontologie region](figures/ontology_region.png)
 - Grace au reasonner et au regles -> IA
 
 #### d) But du projet
 
 - Schema démonstration RUN 3IA
 - Début
-  - ![Run 3IA Init](figures\Run3IA_Init.png)
+  - ![Run 3IA Init](figures/Run3IA_Init.png)
 - Objectif
-  - ![Run 3IA Goal](figures\Run3IA_Mission.png)
+  - ![Run 3IA Goal](figures/Run3IA_Mission.png)
 - Explications
 - Comment elle a été creer ?
 - List des diffenetes objects individues -> Classes
 - Listes des differentes chose a faire attention : Data Properties, Objectes Properties, rules
-  - ![Run 3iA Exemple](figures\Run3IA_Example.png)
+  - ![Run 3iA Exemple](figures/Run3IA_Example.png)
 - Explications
 - Schema FeedBack Loop
-  - ![Run 3iA FeedBack](figures\Run3IA_FeedbackLoop.png)
+  - ![Run 3iA FeedBack](figures/Run3IA_FeedbackLoop.png)
 - Explications
 - Demonstration avec le Digital Twin XDE : Vidéos
   - Demander la vidéo à Raphaël
@@ -342,11 +342,11 @@ mots-clés :
 #### a) Algoritme Simple Septembre
 
 - Algoritme Global
-  - ![Algorithme Global](figures\Algo_simple_global.png)
+  - ![Algorithme Global](figures/Algo_simple_global.png)
 - Algortime Local (Duplex DT)
-  - ![Algoritme Local](figures\Algo_simple_local.png)
+  - ![Algoritme Local](figures/Algo_simple_local.png)
 - Algoritme Micro
-  - ![Algoritme micro (à modifier)](figures\Algo_simple_micro.png)
+  - ![Algoritme micro (à modifier)](figures/Algo_simple_micro.png)
 - Comment on ils été pensé ?
 - Quels sont les problemes ?
 
@@ -358,14 +358,14 @@ mots-clés :
 
 ### 2) Algoritme : Ontology Manager
 
-- ![Ontology manager Schematics Full](figures\Ontology_Manager_Full.png)
+- ![Ontology manager Schematics Full](figures/Ontology_Manager_Full.png)
 
 #### a) Besoins
 
 - Squidly Compatible
-  - ![Squidly](figures\Squidly.png)
+  - ![Squidly](figures/Squidly.png)
 - MAPE-K compatible
-  - ![MAPE-K](figures\MAPEK.png)
+  - ![MAPE-K](figures/MAPEK.png)
 - Decentralisation
 - Penser Node Ros + Behavior Tree
 - Modulable
@@ -385,7 +385,7 @@ mots-clés :
 - Pourquoi?
 - Quels Blocs Garder
 - Schema :
-  - ![Ontology manager Schematics Reduit](figures\Ontology_Manager_Red.png)
+  - ![Ontology manager Schematics Reduit](figures/Ontology_Manager_Red.png)
 
 ### 3) Algorithme réduit : Algoritme implémenté
 
@@ -422,7 +422,7 @@ L'implementation a été fait dans un premier temos avec des script python indep
   - qui convient au domaine
   - qui convient aux node utiliséq
 - Montrer le bloc Design
-  - [Ontology manager Design](figures\Ontology_Manager_Design.png)
+  - [Ontology manager Design](figures/Ontology_Manager_Design.png)
 - Expliquer les étapes
 
 #### b) Choix de l'Upper Ontologie
