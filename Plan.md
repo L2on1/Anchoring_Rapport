@@ -14,13 +14,13 @@
       - [b) Domaine du projet](#b-domaine-du-projet)
     - [3) Présentation du projet : Ancrage Sémantique (Anchoring)](#3-présentation-du-projet--ancrage-sémantique-anchoring)
       - [a) Introduction au projet](#a-introduction-au-projet)
-      - [b) Terminogy](#b-terminogy)
-      - [c) Presentation Anchoring avec remplissage d'une ontologie](#c-presentation-anchoring-avec-remplissage-dune-ontologie)
+      - [b) Terminologies](#b-terminologies)
+      - [c) Présentation Anchoring avec remplissage d'une ontologie](#c-présentation-anchoring-avec-remplissage-dune-ontologie)
       - [d) But du projet](#d-but-du-projet)
-  - [II - Ontologie : la base de connaissance](#ii---ontologie--la-base-de-connaissance)
-    - [1) Nos Besoins justifiant une ontologie + intrdoction au ontologies](#1-nos-besoins-justifiant-une-ontologie--intrdoction-au-ontologies)
+  - [II - Ontologie : la base de connaissances](#ii---ontologie--la-base-de-connaissances)
+    - [1) Nos Besoins justifiant une ontologie + introduction aux ontologies](#1-nos-besoins-justifiant-une-ontologie--introduction-aux-ontologies)
     - [2) Choix du OWL](#2-choix-du-owl)
-    - [3) Qu'est ce qu'on veut faire avec notre moteur ontologique](#3-quest-ce-quon-veut-faire-avec-notre-moteur-ontologique)
+    - [3) Qu'est-ce qu'on veut faire avec notre moteur ontologique](#3-quest-ce-quon-veut-faire-avec-notre-moteur-ontologique)
       - [a) Protege](#a-protege)
       - [b) OWLAPI / Jena](#b-owlapi--jena)
       - [c) Ontologenius](#c-ontologenius)
@@ -28,46 +28,46 @@
       - [e) KnowRob](#e-knowrob)
       - [f) Autre moteur d'ontologie](#f-autre-moteur-dontologie)
   - [III - Algorithme](#iii---algorithme)
-    - [1) Presentation Algorithme](#1-presentation-algorithme)
-      - [a) Algoritme Simple Septembre](#a-algoritme-simple-septembre)
-      - [b) Algoritme Linéaire](#b-algoritme-linéaire)
-    - [2) Algoritme : Ontology Manager](#2-algoritme--ontology-manager)
+    - [1) Présentation Algorithme](#1-présentation-algorithme)
+      - [a) Algorithme Général](#a-algorithme-général)
+      - [b) Algorithme Linéaire](#b-algorithme-linéaire)
+    - [2) Algorithme : Ontology Manager](#2-algorithme--ontology-manager)
       - [a) Besoins](#a-besoins)
-      - [b) Presenatation de l'algoritme](#b-presenatation-de-lalgoritme)
+      - [b) Présentation de l'algorithme](#b-présentation-de-lalgorithme)
       - [c) Réduction de Ontology Manager dans le cadre du projet](#c-réduction-de-ontology-manager-dans-le-cadre-du-projet)
-    - [3) Algorithme réduit : Algoritme implémenté](#3-algorithme-réduit--algoritme-implémenté)
-      - [a) Explications de l'algoritme](#a-explications-de-lalgoritme)
+    - [3) Algorithme réduit : Algorithme implémenté](#3-algorithme-réduit--algorithme-implémenté)
+      - [a) Explications de l'algorithme](#a-explications-de-lalgorithme)
       - [b) SYSML](#b-sysml)
-      - [c) Implementation ROS Squidly](#c-implementation-ros-squidly)
-  - [IV - Implementation](#iv---implementation)
+      - [c) Implémentation ROS Squidly](#c-implémentation-ros-squidly)
+  - [IV - Implémentation](#iv---implémentation)
     - [1) Design](#1-design)
-      - [a) Role du design](#a-role-du-design)
+      - [a) Rôle du design](#a-rôle-du-design)
       - [b) Choix de l'Upper Ontologie](#b-choix-de-lupper-ontologie)
       - [c) Présentation de SOMA](#c-présentation-de-soma)
       - [d) Modification de SOMA](#d-modification-de-soma)
-      - [e) Ajout du Mid et du Domain](#e-ajout-du-mid-et-du-domain)
-        - [i) Mid ajout de la compatibilité avec les autres Node](#i-mid-ajout-de-la-compatibilité-avec-les-autres-node)
-        - [ii) Domain](#ii-domain)
-      - [f) Comment le Design/domain est fait ?](#f-comment-le-designdomain-est-fait-)
+      - [e) Ajout du Mid et du Domaine](#e-ajout-du-mid-et-du-domaine)
+        - [i) Mid ajout de la compatibilité avec les autres Nodes](#i-mid-ajout-de-la-compatibilité-avec-les-autres-nodes)
+        - [ii) Domaine](#ii-domaine)
+      - [f) Comment le Design/domaine est fait ?](#f-comment-le-designdomaine-est-fait-)
     - [2) Setup](#2-setup)
-      - [a) Role du setup](#a-role-du-setup)
+      - [a) Rôle du setup](#a-rôle-du-setup)
       - [b) Comment le populator est fait ?](#b-comment-le-populator-est-fait-)
     - [3) Run Time (boucle temps réel)](#3-run-time-boucle-temps-réel)
-      - [a) Role du run time](#a-role-du-run-time)
+      - [a) Rôle du run time](#a-rôle-du-run-time)
       - [b) Integrateur](#b-integrateur)
-        - [i) Role de l'intégrateur](#i-role-de-lintégrateur)
+        - [i) Rôle de l'intégrateur](#i-rôle-de-lintégrateur)
         - [ii) Comment l'intégrateur est fait ?](#ii-comment-lintégrateur-est-fait-)
       - [c) Rulemaker](#c-rulemaker)
-        - [i) Role du rulemaker](#i-role-du-rulemaker)
+        - [i) Rôle du rulemaker](#i-rôle-du-rulemaker)
         - [ii) Comment le rulemaker est fait ?](#ii-comment-le-rulemaker-est-fait-)
       - [d) Reasonner](#d-reasonner)
-        - [i) Role du reasonner](#i-role-du-reasonner)
+        - [i) Rôle du reasonner](#i-rôle-du-reasonner)
         - [ii) Comment le reasonner est fait ?](#ii-comment-le-reasonner-est-fait-)
       - [e) Reader](#e-reader)
-        - [i) Role du reader](#i-role-du-reader)
+        - [i) Rôle du reader](#i-rôle-du-reader)
         - [ii) Comment le reader est fait ?](#ii-comment-le-reader-est-fait-)
     - [4) Conclusion de l'implémentation](#4-conclusion-de-limplémentation)
-  - [V - Apprentissages, critiques, autres chose à explorer](#v---apprentissages-critiques-autres-chose-à-explorer)
+  - [V - Apprentissages, critiques, autres choses à explorer](#v---apprentissages-critiques-autres-choses-à-explorer)
     - [1) Ontologies](#1-ontologies)
     - [2) SWRL](#2-swrl)
     - [3) Moteur Ontologique](#3-moteur-ontologique)
@@ -78,40 +78,41 @@
     - [8) RuleMaker](#8-rulemaker)
     - [9) Reasonner](#9-reasonner)
     - [Moi-même](#moi-même)
-    - [Suite a donner au projet](#suite-a-donner-au-projet)
+    - [Suite à donner au projet](#suite-à-donner-au-projet)
   - [Conclusion](#conclusion)
 
 ## Résumé (Français)
 
-Ancrage symbolique (Anchoring) processus qui transforme des données de Jumeaux numériques (fonctionnel ou géométrique) en une sémantique intelligente à l'aide d'une ontologie. Cette ontologie peut être lue pour donner des prédicats sous la forme *Sujet* *Action* *Complément*. De plus, grâce à un reasonner ontologique on peut vérifier la cohérence de l'ontologie, faire des inférences (créer des relations) et appliquer des règles. On peut ainsi dire que l'Anchoring raisonne et donc que c'est un processus intelligent. Grâce à l'Anchoring, l'ontologie est un savoir sémantique sur lequel d'autres applications peuvent interagir. Dans mon cas d'application, la robotique cognitive, le Task Planner et le jumeau numérique (Digital Twin) interagissent avec l'ontologie. Les Digital Twins permettent de remplir l'ontologie grâce à l'Anchoring (intégrateur), et l'Anchoring peut demander aux Digital Twins des informations supplémentaires si nécessaire. Le Task Planner reçoit les prédicats que fournit l'Anchoring pour créer une liste d'action pour résoudre un objectif. L'Anchoring est temps réel et donc peut s'apercevoir de problème dans les actions. De plus, l'Anchoring est basé sur une ontologie qui est créé avec une upper ontologie pour permettre à ce que ce savoir sémantique soit partageable. Nous avons vue une proposition du algorithme basé MAPEK, décentralisé pour l'utilisation de la base de connaissance. Et enfin on voit une proposition d'implémentation avec une upper ontologie : SOMA et un moteur ontologique : owlready2 en utilisant python et ros. L'exemple présenté est en intéraction avec un jumeau numérique et task planner. En conclusion nous avons une premier proposition d'implémentation et surtout nous avons appris sur les technologies utilisé et nous avons des voix d'améliorations.
+Ancrage symbolique (Anchoring) processus qui transforme des données de Jumeaux numériques (fonctionnels ou géométriques) en une sémantique intelligente à l'aide d'une base de données. Cette base de données est une ontologie et représente une base de connaissances. L'ontologie peut être lue pour retourner des prédicats sous la forme *Sujet* *Action* *Complément*. De plus, grâce à un raisonneur ontologique, on peut vérifier la cohérence de l'ontologie, faire des inférences (créer des relations) et appliquer des règles. On peut ainsi dire que l'Anchoring raisonne et donc que c'est un processus intelligent. Grâce à l'Anchoring, l'ontologie est un savoir sémantique sur lequel d'autres applications peuvent interagir. Dans mon cas d'application, la robotique cognitive, le planificateur de taches (Task Planner) et le jumeau numérique (Digital Twin) interagissent avec l'ontologie. Les Digital Twins permettent de remplir l'ontologie grâce à l'Anchoring (intégrateur), et l'Anchoring peut demander aux Digital Twins des informations supplémentaires si nécessaire. Le Task Planner reçoit les prédicats que fournit l'Anchoring pour créer une liste d'action pour résoudre un objectif. L'Anchoring est temps réel, et donc peut s'apercevoir de problème dans les actions. De plus, l'Anchoring est fondé sur une ontologie créée avec une upper ontologie pour permettre à ce que ce savoir sémantique soit partageable. Nous avons une proposition de l'algorithme établi à partir de MAPE-K (Monitor, Analyse, Plan, Execute, Knowledge), décentralisé pour utiliser la base de connaissances. Ainsi, on a une proposition d'implémentation avec une upper ontologie : SOMA et un moteur ontologique : owlready2 avec python et ROS. L'exemple présenté est en interaction avec un jumeau numérique et le planificateur de tâches. En conclusion, nous avons une première proposition d'implémentation et surtout, nous avons appris sur les technologies utilisées et nous avons aussi des voix d'améliorations.
 
 ## Résumé (Anglais)
 
-Symbolic anchoring (Anchoring) process that transforms data from Digital Twins (functional or geometric) into intelligent semantics using an ontology. This ontology can be read to give predicates in the form *Subject* *Action* *Complement*. Futhermore, an ontology reasonner can be used to check the consistency of the ontology, make inferences (create relations) and apply rules.Anchoring can therefore be considered an intelligent process. Thanks to Anchoring, the ontology is a semantic knowledge on which other applications can interact. In my case study, cognitive robotics, the Task Planner and the Digital Twin interact with the ontology. The Digital Twins fill in the ontology thanks to the Anchoring (integrator), and the Anchoring can request additional information from the Digital Twins if necessary. The Task Planner receives the predicates provided by the Anchoring to create an action list to solve a goal. Anchoring is real-time, so it can spot problems in actions. Futhemore, Anchoring is based on an ontology that is created with an upper ontology to enable this semantic knowledge to be shared.
+Symbolic anchoring (Anchoring) process that transforms Digital Twin data (functional or geometric) into intelligent semantics using a database. This database is an ontology and represents a knowledge base. The ontology can be read to return predicates in the form *Subject* *Action* *Complement*. In addition, thanks to an ontological reasoner, we can check the consistency of the ontology, make inferences (create relationships) and apply rules. We can thus say that Anchoring reasons and therefore that it is an intelligent process. Thanks to Anchoring, the ontology is semantic knowledge on which other applications can interact. In my application case, cognitive robotics, the Task Planner and the Digital Twin interact with the ontology. The Digital Twins make it possible to fill in the ontology thanks to the Anchoring (integrator), and the Anchoring can ask the Digital Twins for additional information if necessary. The Task Planner receives the predicates that the Anchoring provides to create a list of actions to resolve an objective. Anchoring is real time, and therefore can detect problems in actions. In addition, Anchoring is based on an ontology created with an upper ontology to allow this semantic knowledge to be shareable. We have a proposal for the algorithm established from MAPE-K (Monitor, Analysis, Plan, Execute, Knowledge), decentralized to use the knowledge base. Thus, we have an implementation proposal with an upper ontology: SOMA and an ontological engine: owlready2 with python and ROS. The example shown is interacting with a digital twin and the task scheduler. In conclusion, we have a first implementation proposal and above all, we have learned about the technologies used and we also have voices for improvements.
 
 ## Mots-clés
 
-- congnitive Robotics
+- Cognitive Robotics
 - Robot intélligent
 - Symbolique
 - Sémantique
 - Ontologie
 - Raisonnement
-- Probleme complexe
+- Problème complexe
 - Ancrage
 - Ancrage Symbolique
-- language formel
-- language de npn programmation
+- langage formel
+- langage de non programmation
+- Jumeaux numérique (Digital Twin : DT)
 
 ## Introduction
 
-Avec l'avement de plus en plus presente de l'automatisation et d la robotique, on veut maintenant que cette robotique soit intelligente et donc qu'elle est une compréhension de son environnement et une capacité d'apprentissage. Nous avons déjà la capacité de créer des taches grace à des behaviour tree qui representent des taches complexes avec un regroupement de taches de plus en plus simple. On est aussi capable grâce à des plannificateur de taches qui avec un plan du monde et un objectif peuvent donner une liste de taches à faire pour resoudre l'objectif. Nous pouvons aussi representer le monde réel grâce à des jumeaux numériques. On cherche maintenant à créer des algorithme munie d'intélligence qui peuvent comprendre le monde et qui soit capable de raisonnement. Un algotihme capable de faire ceci serait capable de comprendre n'importe quelle situation de monde et aussi capable de raisonnement. Il pourrait ainsi servir à n'importe quelle autres processus informatique dans n'importe quelle domaine, le domaine de la finance, le domaine de la paublicité sur le web par exemple. Ce serait donc un algorithme capable de manipuler des base de connaissance et capable aussi d'en creer. On voudrait ainsi remplacer les systemes experts par des règles et des raisonnement basé sur des fait symboliques. Cette algorithme sera donc l'intelligence qui manque dans la robotique actuel.
+Avec l'avènement de plus en plus présente de l'automatisation et de la robotique, on veut maintenant que cette robotique soit intelligente et donc qu'elle est une compréhension de son environnement et une capacité d'apprentissage. Nous avons déjà la compétence de créer des tâches grâce à des behaviour tree qui représentent des tâches complexes avec un regroupement de taches de plus en plus simple. On est aussi capable grâce à des planificateurs de tâches qui avec un plan du monde et un objectif peuvent donner une liste de tâches à faire pour résoudre l'objectif indiqué. Nous pouvons aussi représenter le monde réel grâce à des jumeaux numériques. On cherche désormais à créer des algorithmes munis d'intelligence qui peuvent comprendre le monde et capable de raisonnement. Un algorithme capable de faire ceci serait apte à comprendre n'importe quelle situation de monde et aussi capable de raisonnement. Il pourrait ainsi servir à n'importe quelles autres processus informatiques dans n'importe quel domaine, le domaine de la finance, le domaine de la publicité sur le web par exemple. Ce serait donc un algorithme apte à manipuler des bases de connaissances et capable aussi d'en créer. Par conséquent, on voudrait pouvoir remplacer les systèmes experts par des règles et des raisonnements établis sur des faits symboliques. Cet algorithme sera ainsi l'intelligence qui manque dans la robotique actuelle.
 
 <!--- Problématique -->
-Dans ce mémoire, à été fait dans un but de recherche dans un labo de rechercher en France au CEA. Nous allons essayer de creer un processus nommé l'***Anchoring*** pour *Ancrage Symbolique* qui va creer et manipuler une base de connaissance. Cette base de connaissance sera une base de donnée ontologique. Le but de l'anchoring sera de creer une ontologie base puis de la remplir avec les donnée du jumeau numérique qui représente le monde tout en faisant de la réflexion sur ces données pour s'assurer de la comprehension du monde. Pour ensuite utiliser cette base de connaissance intélligente pour le task planner qui a besoin d'une representation du monde réfléchis et symbolique.
+Dans ce mémoire, le projet a été fait dans un but de recherche dans un laboratoire de recherche en France au CEA. Nous allons essayer de créer un processus nommé l'***Anchoring*** pour *Ancrage Symbolique* qui va créer et manipuler une base de connaissances. Cette base de connaissances sera une base de données ontologiques. Le but de l'anchoring sera de créer une ontologie base. Puis, de remplir l'ontologie avec les données du jumeau numérique qui représente le monde. L'ontologie appliquera des fonctionnements du monde présent dans sa connaissance, et de la réflexion sur ces données pour s'assurer de la compréhension du monde. Ensuite, cette base de connaissances intelligente sera utilisée par le planificateur de tâches qui a besoin d'une représentation du monde réfléchi et symbolique.
 
 <!--- Introduction au plan -->
-Je vais d'abors présenter le projet, puis expliquer les la technologie et les outils lier aux ontologies, ensuite présenter la création de l'algorithme de l'anchoring et enfin je parlerai de comment j'ai implémenter l'anchoring. Je presenterais differentes critqie et des voies d'amélioration du projet et ses possibles suites avant de conclure.
+Je vais d'abords présenter le projet et son environnement, puis expliquer les technologies et les outils lier aux ontologies, ensuite présenter la création de l'algorithme de l'anchoring. Et enfin, je parlerai de comment on a implémenté l'anchoring. Je présenterai différentes critiques et des voies d'amélioration du projet et ses possibles suites avant de conclure.
 
 ## I - Présentation du Projet
 
@@ -127,9 +128,9 @@ Je vais d'abors présenter le projet, puis expliquer les la technologie et les o
 
 #### b) Présentation de l'environnement du projet
 
-- LSEA : Laboratoire des systeme embarqueé artificiel
-- Modele base engineering
-- SQUIDLY : projet de mes tuteurs -> architechture generaliste pour les robots intelligents
+- LSEA : Laboratoire de conception des systèmes embarqués et autonomes
+- Modele based engineering
+- SQUIDLY : projet de mes tuteurs -> architecture généraliste pour les robots intelligents
 - Intelligence Robot Team : Raphaël, Matteo, Luis, Jianyong
 - Moonshot : projet intern
 
@@ -141,19 +142,19 @@ Je vais d'abors présenter le projet, puis expliquer les la technologie et les o
 - S'inspirer du model based engineering
 - Découvrir les technologies dans le domaine des ontologies et des règles ontologiques (SWRL)
 - Découvrir comment faire de la robotique avec des ontologies
-- Faire des conclusions sur les technologies et les pistes recherchercher les points positifs et les points négatifs
-- language de non programmation -> sortir la connaissance experte du code et le transformer en connaissance modélisée dans une ontologie, donc exploitable, réutilisable, étudiable
-- Prémier itération
+- Faire des conclusions sur les technologies et les pistes recherchées : les points positifs et les points négatifs
+- langage de non-programmation -> sortir la connaissance experte du code et le transformer en connaissance modélisée dans une ontologie -> exploitable, réutilisable, étudiable
+- Première itération
 - Faire des erreurs pour apprendre
-- Faire un premier Anchoring
+- Faire un premier Anchoring pour SQUIDLY et les autres projets
 
 #### b) Domaine du projet
 
-- SQUIDLY : architechture généraliste pour la robotique
+- SQUIDLY : architecture généraliste pour la robotique
 - Robotique cognitive
-  - Qu'est ce que c'est ?
-  - Qu'est ce que cela implique ?
-- Lier des données geometrique et functionnel (jumeaux numérique) à une base de données Symbolique et donc SÉMANTIQUE pour faire des raisonnements functionnels et donc intélligence
+  - Qu'est-ce que c'est ?
+  - Qu'est-ce que cela implique ?
+- Lier des données géométriques et fonctionnelles (jumeaux numériques) à une base de données Symbolique, et donc SÉMANTIQUE pour faire des raisonnements fonctionnels, et donc intelligence
 
 ### 3) Présentation du projet : Ancrage Sémantique (Anchoring)
 
@@ -162,32 +163,32 @@ Je vais d'abors présenter le projet, puis expliquer les la technologie et les o
 - Schéma : Perception -> Planning -> Acting
   - ![Schéma : Perception -> Planning -> Acting](figures/Algo_simple_global.png)
   - Perception : Capteurs -> **Jumeaux numériques** (Géométrique/Fonctionnel)
-  - Plannification : ***Anchoring*** -> **Task Planner** _> execution layer
-  - Action : Controller -> Actuators
+  - Planification : ***Anchoring*** -> **Task Planner** -> execution layer
+  - Action : Contrôleur -> Actuators
 - Expliquer ce schéma :
   - Rôle de l'Anchoring : lier les data de digital dans une base de données intelligentes
-  - Place de l'Anchoring : base de connaissance en amont des la capture de donnée et en aval de la prise de decision et de l'action
-  - aide à la décision basé sur des règles epxertes (l'ontologie) et l'état du "système", ex. prise de décision banquaire, syteme de pub, des syteme avec des jumeaux numériques
-  - Plusieurs Digital Twin : gemetrique et fontionnel cf b)
+  - Place de l'Anchoring : base de connaissances en amont de la capture de donnée et en aval de la prise de décision et de l'action
+  - Aide à la décision basée sur des règles expertes (l'ontologie) et l'état du "système", telles que la prise de décision bancaire, le système de pub, les systèmes avec des jumeaux numériqués.*
+  - Plusieurs Digital Twin : géométrique et fonctionnel cf b)
 
 - Schéma : DT -> Anchoring -> Task Planner
   - ![Schéma : DT -> Anchoring -> Task Planner](figures/Algo_simple_local.png)
   - Anchoring -> Knowledge Base : Ontology + rules
 - Expliquer ce schéma
 
-#### b) Terminogy
+#### b) Terminologies
 
 - Environnement
 - Digital Twin - jumeaux numérique
-  - Qu'est ce que c'est ?
+  - Qu'est-ce que c'est ?
   - DT géométrique + exemples
   - DT fonctionnels + exemples
-- Task Planner - Planneur de taches
+- Task Planner - Planificateur de taches
   - Goal
   - Task Plan
   - Qu'est ce que c'est ?
   - Exemples
-- Ontologies (Dévellopper cette partie) - mettre des capture ontograph et owlredbh
+- Ontologies (Développer cette partie) - mettre des captures ontograph et owlred
   - Qu'est ce que c'est ?
   - Semantique
   - Symbole
@@ -201,62 +202,61 @@ Je vais d'abors présenter le projet, puis expliquer les la technologie et les o
   - Inferences
   - Illustrations
 
-#### c) Presentation Anchoring avec remplissage d'une ontologie
+#### c) Présentation Anchoring avec remplissage d'une ontologie
 
-- Schema avec ontologie
+- Schéma avec ontologie
   - Design
   - Setup
   - Run
-- Ontologie de base -> import pour l'augmenté ontologie situation -> ajout des individue <=> attribution
-- Schema ontologie : class - individues (10/10/23)
+- Ontologie base -> import pour l'augmentée ontologie situation -> ajout des individues <=> attribution
   - ![ontologies Tree](figures/Anchoring_Algorithm-Tree.png)
   - ![ontologie region](figures/SimpleAnchologyRegion.png)
-    - Classes -> Design ->Creation de la strucure cf model base engineering
-    - Indiviudues -> setup -> Boite vides
+    - Classes -> Design -> Création de la structure cf model base engineering
+    - Individues -> setup -> Boites vides
     - Data -> Run -> remplissage des boites vides
-- Grace au reasonner et au regles -> IA
+- Grace au raisonneur et aux règles -> Intelligence -> IA
 
 #### d) But du projet
 
-- Schema démonstration RUN 3IA
+- Schéma démonstration RUN 3IA
 - Début
   - ![Run 3IA Init](figures/Run3IA_Init.png)
 - Objectif
   - ![Run 3IA Goal](figures/Run3IA_Mission.png)
 - Explications
-- Comment elle a été creer ?
-- List des diffenetes objects individues -> Classes
-- Listes des differentes chose a faire attention : Data Properties, Objectes Properties, rules
+- Comment a-t-elle été créé ?
+- Liste des différentes objects individues -> Classes
+- Liste des différentes choses à faire attention : Data Properties, Objectes Properties, rules
   - ![Run 3iA Exemple](figures/Run3IA_Example.png)
 - Explications
-- Schema FeedBack Loop
+- Schéma FeedBack Loop
   - ![Run 3iA FeedBack](figures/Run3IA_FeedbackLoop.png)
 - Explications
-- Demonstration avec le Digital Twin XDE : Vidéos
+- Démonstration avec le Digital Twin XDE : Vidéos
   - Demander la vidéo à Raphaël
 
-## II - Ontologie : la base de connaissance
+## II - Ontologie : la base de connaissances
 
-### 1) Nos Besoins justifiant une ontologie + intrdoction au ontologies
+### 1) Nos Besoins justifiant une ontologie + introduction aux ontologies
 
-- Qu'est ce qu'une ontologie ?
+- Qu'est-ce qu'une ontologie ?
   - ![Example du livre de owlready2](figures/OntoExample.png)
-  - Exemple de mon cas tres simple sur protege
+  - Exemple de mon cas très simple sur protege
   - ![SimpleAnchologyCubeRed](figures/SimpleAnchologyCubeRed.png)
-  - Explication de l'exmple du cube rouge
-    - Cubered indiviude
-    - id :a2c
-    - DT xde
-    - color Red
-    - Class cube > PB> PO>Object > entity
+  - Explication de l'exemple du cube rouge
+    - CubeRed1 individue
+    - id : a2c
+    - DT : xde
+    - color : Red
+    - Class : Cube > Physical Body > Physical Object > Object > Entity
   - Rappel des concepts
 - Pourquoi une ontologie ?
   - Lisible par la machine et par les humains
   - Manipulation de données Sémantique
   - Raisonneur ontologique -> Valider et Inférer la connaissance
-  - Règles basés sémantique : SWRL (Semantic Web Rule Language)
+  - Règles basées sémantiques : SWRL (Semantic Web Rule Language)
     - Introduction rapide au SWRL
-  - Base de connaissance commune : Upper Ontologie
+  - Base de connaissances commune : Upper Ontologie
 
 ### 2) Choix du OWL
 
@@ -267,18 +267,18 @@ Je vais d'abors présenter le projet, puis expliquer les la technologie et les o
   - ....
 - Facile
 - Protege
-- Upper Ontologie, presentation upper section IV)I)b)
+- Upper Ontologie, présentation upper section IV)I)b)
 - Communauté
-- base sur xml -> extension facile + connaissance de l'equipe
+- Base sur XML -> extension facile + connaissance de l'équipe
 
-### 3) Qu'est ce qu'on veut faire avec notre moteur ontologique
+### 3) Qu'est-ce qu'on veut faire avec notre moteur ontologique
 
 - Manipuler l'ontologie (S'appuyer sur les schémas du haut)
   - lire les classes / individues / Data Properties / Object Properties
   - Créer des classes / individues / Data Properties / Object Properties
 - Raisonner
-- Appliquer les regles SWRL
-- Pouvoir etre utiliser avec ROS
+- Appliquer les règles SWRL
+- Pouvoir être utiliser avec ROS
 - Rapidité pour robot
 
 #### a) Protege
@@ -289,7 +289,7 @@ Je vais d'abors présenter le projet, puis expliquer les la technologie et les o
 - ![Protege avec Soma Individuals](figures/ProtegeIndividual.png)
 - Atouts
   - visualisation
-    - Tout les figures on ete fait avec ontograph de protege
+    - Toutes les figures ont été faites avec ontograph de protege
   - creation
   - on peut tout faire
   - Plugin
@@ -298,68 +298,69 @@ Je vais d'abors présenter le projet, puis expliquer les la technologie et les o
 - Defauts
   - Programme -> pas ROS
 - Conclusion
-  - Programme majeur dans le devellopement d'une ontologie
+  - Programme majeur dans le développement d'une ontologie
 
 #### b) OWLAPI / Jena
 
-owlapi : https://github.com/owlcs/owlapi
-Jena : https://github.com/apache/jena
+OWLAPI : <https://github.com/owlcs/owlapi>
+
+Jena : <https://github.com/apache/jena>
 
 - Atouts
   - Api sur lequel repose Protege
-  - La plus utilise pour manipulé du OWL
+  - La plus utilise pour manipuler du OWL
 - Defauts
   - Lent, demande beaucoup de ressource
   - Complexe
-  - 'java'
+  - 'java' (plus compliqué à utiliser que C++ ou Python avec ROS et peu de connaissance personnelle)
 - Conclusion
   - NON
 
 #### c) Ontologenius
 
-https://sarthou.github.io/ontologenius/
+<https://sarthou.github.io/ontologenius/>
 
 - ![Logo Ontolegenius](figures/ontologenius.png)
 - Atouts
-  - Developper par un proche de la team
+  - Développer par un proche de la team
   - penser pour la robotique
   - Rapide (Benchmark)
   - Python / C++
   - ROS2
-  - Developpement Actif
-  - Devloppement sous forme de plugin => contribution "facile"
+  - Développement Actif
+  - Développement sous forme de plugin => contribution "facile"
 - Defauts
   - Pas de SWRL
-  - Manque de reasonner avec SWRL
+  - Manque de raisonneur avec SWRL
   - Documentation pas super clair
   - ...
 - Conclusion
-  - Une solution a garder l'oeil
+  - Une solution à garder l'œil
   - Pas garder par manque de SWRL
   
 #### d) Owlready2
 
-https://owlready2.readthedocs.io/en/latest/
+<https://owlready2.readthedocs.io/en/latest/>
 
 - Atouts
   - Python
   - Actif dans le developpment
-  - Reasonner pellet/HermiT
+  - Raisonneur pellet/HermiT
   - Rapide (Benchmark)
   - expressif
   - agile
   - On peut tout faire
   - Documentation + livre
-  - API tres complete
+  - API très complete
 - Defauts
-  - Pas assez rapide a cause du reasonner java pellet
-  - Documentation + livre incomplete das mon use case
+  - Pas assez rapide à cause du raisonner java pellet
+  - Documentation + livre incomplet dans mon use case
 - Conclusion
-  - Moteur Ontologique garder garce au python, sa simplicité, et reasonner pellet
+  - Moteur Ontologique gardé grâce au python, sa simplicité et raisonneur pellet
 
 #### e) KnowRob
 
-https://knowrob.org/
+<https://knowrob.org/>
 
 - Atouts
   - Université Bremen
@@ -372,71 +373,71 @@ https://knowrob.org/
 #### f) Autre moteur d'ontologie
 
 - Cowl
-  - https://github.com/sisinflab-swot/cowl
+  - <https://github.com/sisinflab-swot/cowl>
   - Atouts
     - lightweight
     - C++
-    - -developpemet actif
+    - Développement actif
   - Defauts
-    - Pas de reasonner du tout
+    - Pas de raisonneur du tout
   - Conclusion
     - NON
 - ORO
-  - https://www.openrobots.org/wiki/oro-ontology
+  - <https://www.openrobots.org/wiki/oro-ontology>
   - OpenRobots Common Sense Ontology
   - Atouts
     - CNRS Sarthou
     - C++
   - Defauts
-    - Pas de reasonner du tout
+    - Pas de raisonneur du tout
     - Plus dev depuis 2012
   - Conclusion
     - NON
 - Armor RDS
-  - https://github.com/EmaroLab/armor
+  - <https://github.com/EmaroLab/armor>
   - Atout
-    - Penser Ros Docker
+    - Penser ROS Docker
   - Defauts
     - Plus Dev depuis 2016
     - Juste un Test
     - Pas de raisonner
   - NON
 
-Donc choix de owlready2.
+Par conséquent : choix d'owlready2.
 
 ## III - Algorithme
 
-### 1) Presentation Algorithme
+### 1) Présentation Algorithme
 
-#### a) Algoritme Simple Septembre
+#### a) Algorithme Général
 
-- Algoritme Global
+- Algorithme Global
   - ![Algorithme Global](figures/Algo_simple_global.png)
-  - Apres la perception reel > DT
-  - Appuie sur les differents DT
+  - Après la perception réelle > DT
+  - Appuie sur les différents DT
   - Anchoring
-  - Task Planner > creer des behanvior tree grace a des goal
-- Algortime Local (Duplex DT)
-  - ![Algoritme Local](figures/Algo_simple_local.png)
-  - modifier mettre des fleches doubles
-- Comment on ils été pensé ?
-- Quels sont les problemes ?
+  - Task Planner > créer des behaviour tree grâce à des goals
+- Algorithme Local (Duplex DT)
+  - ![Algorithme Local](figures/Algo_simple_local.png)
+  - Intéractions en double sens
+- Comment ont-ils été pensés ?
+- Quels sont les problèmes ?
 
-#### b) Algoritme Linéaire
+#### b) Algorithme Linéaire
 
 - ![ontologies Tree](figures/Anchoring_Algorithm-Tree.png)
-- Extension des premier algoritme avec la notion d'ontologie
-- Comment a il été pensé ?
+- Extension du premier algorithme avec la notion d'ontologie
+- Comment a-t-il été pensé ?
   - Import ontology
-  - evolution de l'ontology en differentes phase 
+  - Évolution de l'ontologie en différentes phases
     - Design
     - Setup
     - Run
   - Interaction avec DT et TP et Ontology
-- Quels sont les problemes ?
+- Quels sont les problèmes ?
   - Trop linéaire
 
-### 2) Algoritme : Ontology Manager
+### 2) Algorithme : Ontology Manager
 
 - ![Ontology manager Schematics Full](figures/Ontology_Manager_Full.png)
 
@@ -447,55 +448,55 @@ Donc choix de owlready2.
 - MAPE-K compatible
   - ![MAPE-K](figures/MAPEK.png)
 - Decentralisation
-- Penser Node Ros + Behavior Tree
+- Penser Node Ros + Behaviour Tree
 - Modulable
   - learner
   - viewpoint
   - substracter
   
-#### b) Presenatation de l'algoritme
+#### b) Présentation de l'algorithme
 
-- ![scham lineaire](figures/Anchoring_Algorithm-Tree.png)
-- Superposition des bloc = dependance plugin
+- ![Schéma lineaire](figures/Anchoring_Algorithm-Tree.png)
+- Superposition des blocs = dépendance / plugin /import
 - Explications (Bien détailler)
 
 #### c) Réduction de Ontology Manager dans le cadre du projet
 
-- Pourquoi?
+- Pourquoi ?
   - Simplifier
   - Manque de temps
   - Experimentation
-  - Penser pour pouvoir etre evolutif
-  - Creation du noyaux
+  - Penser pour pouvoir être evolutif
+  - Création du noyau
 - Quels Blocs Garder
-  - Les plus essentiel
+  - Les plus essentiels
     - interaction avec le DT RUN
     - interaction avec le TP
-    - Population Setup mais âs automatique grace a des fichier
-    - Design: creation de l'ontology de base pas auto grace a protege
-- Schema :
+    - Population Setup mais pas automatique grâce à des fichiers
+    - Design : création de l'ontologie base pas automatique grâce à protege
+- Schéma :
   - ![Ontology manager Schematics Reduit](figures/Ontology_Manager_Red.png)
 
-### 3) Algorithme réduit : Algoritme implémenté
+### 3) Algorithme réduit : Algorithme implémenté
 
-#### a) Explications de l'algoritme
+#### a) Explications de l'algorithme
 
 - Design : Création de l’ontologie vide d’individue
 - Setup : Remplie l’ontologie avec les individues et les informations des processus (Task Planner, Digital Twin)
-- Run :(Boucle temps réel) : Ajoute les data properties et met à jour les relations en temps réel
+- Run : (Boucle temps réel) : Ajoute les data properties et actualise les relations en temps réel
 
 #### b) SYSML
 
 - ![Sysml Bdd de Base](figures/SysmlGeneral.png)
 - Annexe
-- Comment a il été creer ?
+- Comment a-t-il été créé ?
   - Idée de decentralisé
-  - Creaetion de plein de petite fonction simple
+  - Création d'une multitude de petites fonctions simples
   - Reste dans l'idée du mapek
   - Le plus compatible avec SQUIDLY
-- [Le mettre a jour ?]
+- [Le mettre à jour ?]
 
-#### c) Implementation ROS Squidly
+#### c) Implémentation ROS Squidly
 
 - Diagramme de sequence
   - Ontology Manager
@@ -504,25 +505,25 @@ Donc choix de owlready2.
     - ![SQ Integrator](figures/SQ_Integrator.png)
   - Reader
     - ![SQ Reader](figures/SQ_Reader.png)
-- Explication du knowlege domain
+- Explication du knowledge domain
 - Explication des path
 - Explication du overwrite etc...
 
-## IV - Implementation
+## IV - Implémentation
 
-L'implementation a été fait dans un premier temos avec des script python independent de ros/Squidly puis ensuite implemente dedans.
+L'implémentation a été faite dans un premier temps avec des scriptes python indépendant de ROS/Squidly puis implémenté dedans.
 
 ### 1) Design
 
 ![Design](figures/Design.png)
 
-#### a) Role du design
+#### a) Rôle du design
 
-- Creer une ontologie de base qui a :
+- Créer une ontologie base qui a :
   - une base ontologique
-  - qui convient à la situations
+  - qui convient aux situations
   - qui convient au domaine
-  - qui convient aux node utiliséq
+  - qui convient aux nodes utilisé
 - Montrer le bloc Design
   - [Ontology manager Design](figures/Ontology_Manager_Design.png)
 - Expliquer les étapes
@@ -530,31 +531,35 @@ L'implementation a été fait dans un premier temos avec des script python indep
 #### b) Choix de l'Upper Ontologie
 
 - C'est quoi une upper ontologie ?
-- Pourqupi ?
+  - Meta/Upper
+  - Mid
+  - Domaine
+- Pourquoi ?
 - Listes des Upper Ontologies :
-  - IEEE1872 based on Cora & SUMO
+  - IEEE1872
+    - Basé sur Cora & SUMO
     - IEEE Standard Ontologies for Robotics and Automation
-    - https://github.com/srfiorini/IEEE1872-owl
+    - <https://github.com/srfiorini/IEEE1872-owl>
     - Description : +/-
-      - (-) manquait je trouve la possiblité d'ajouter des objet simple telle un cube une table
+      - (-) manquait, je trouve la possibilité d'ajouter des objets simples tel un cube, une table
         - Plus en dev
-      - (+) fait pour la robotique autmatic et cognitive
+      - (+) fait pour la robotique automatique et cognitive
   - SUMO
-    - https://www.ontologyportal.org/
+    - <https://www.ontologyportal.org/>
     - Suggested Upper Merged Ontology
-    - Description : +/- 
-    - (+) veru big upper ontology
+    - Description : +/-
+    - (+) very big upper ontology
     - (-) Too big, too complexe
       - not owl
   - UFO
-    - https://ontouml.readthedocs.io/en/latest/intro/ufo.html
+    - <https://ontouml.readthedocs.io/en/latest/intro/ufo.html>
     - Unified Foundational Ontology
-    - based on Dolce, GFO, ontoClean
+    - Basé sur Dolce, GFO, ontoClean
     - Description : +/-
-      - (+)Doctorant au CEA
+      - (+) Doctorant au CEA
       - (-) OntoUML
   - ROSETTA
-    - https://github.com/jacekmalec/Rosetta_ontology
+    - <https://github.com/jacekmalec/Rosetta_ontology>
     - ontology of industrial robotics devices and robotic skills
     - Description : +/-
       - (+) Ontology for skill
@@ -563,91 +568,93 @@ L'implementation a été fait dans un premier temos avec des script python indep
         - already filled
   - DUL
     - DOLCE+DnS Ultralite
-    - http://ontologydesignpatterns.org/wiki/Ontology:DOLCE+DnS_Ultralite
+    - <http://ontologydesignpatterns.org/wiki/Ontology:DOLCE+DnS_Ultralite>
     - ontology for modeling either physical or social contexts
   - DOLCE
     - DOLCE: A Descriptive Ontology for Linguistic and Cognitive Engineering
-    - http://www.loa.istc.cnr.it/dolce/overview.html
+    - <http://www.loa.istc.cnr.it/dolce/overview.html>
     - Description : +/-
   - SOMA
     - ![SOMA](figures/SOMA.jpg)
-    - based on DUL
+    - Basé sur DUL
     - Description : +/-
       - (+) :
       - SOMA : The Socio-physical Model of Activities (SOMA) est une approche de modélisation ontologique pour les agents robotiques autonomes effectuant des activités de manipulation quotidiennes.
       - EASE-CRC et IAI University of Bremen
       - Notions : Objets, Agent, Qualité (dépend de l’environnement), Régions, Goal, Tasks, Sentiments
       - Basé sur DOLCE
-Je choisi SOMA car notions
+
+Je choisis SOMA car notions
 
 #### c) Présentation de SOMA
 
 - Université de Bremen
-- Laboratoir de IA
+- Laboratoire de IA
 - Cognitive Robotic
+- Expliquer / justifier pourquoi le choix de SOMA
 - Social
 - Goal
 - ...
 
 #### d) Modification de SOMA
 
-- Refait SOMA en enlevant des relation car marche pas avec pellet penser pour HermiT
-- Substract avec seulement ce dont j'ai besoin
+- Refait SOMA en enlevant des relations, car ne marche pas avec pellet, pensé pour HermiT
+- Substrat avec seulement ce dont j'ai besoin
 - Toujours compatible Soma
 
-#### e) Ajout du Mid et du Domain
+#### e) Ajout du Mid et du Domaine
 
-##### i) Mid ajout de la compatibilité avec les autres Node
+##### i) Mid ajout de la compatibilité avec les autres Nodes
 
-- Compatiblité avec le DT
+- Compatibilité avec le DT
 - Compatibilité avec le Task Planner
-- interactions ave  differents processus
+- interactions avec  différents processus
 
-##### ii) Domain
+##### ii) Domaine
 
-- Ajout pour le domain robotics
-- Dependre des dituations
+- Ajout pour le domaine robotique
+- Dépendre des situations
 
 Transition : Ajout des individues -> Setup + Run
 
-#### f) Comment le Design/domain est fait ?
+#### f) Comment le Design/domaine est fait ?
 
 - Design fait à la main avec protege
-- Load par l'ontology manager lors du ros launch
+- Load / Chargé par l'ontology manager lors du ros launch
 
 ### 2) Setup
 
 ![Setup](figures/Setup.png)
 
-#### a) Role du setup
+#### a) Rôle du setup
 
 - Populer l'ontologie avec :
   - les individue initial
-  - les configuration des nodes associé :
+  - les configurations des nodes associé :
     - Digital Twin
     - Task Planner
   - Alias
-  - Populer l’ontologie : Ajouts des individues
+  - Peuplement de l’ontologie : Ajouts des individues
     - Ajout des Id des Digital Twin
     - Ajout des propriétés non décrites dans les DT
     - Fait avec un fichier de configuration JSON
   - Ajouter la configuration du Digital Twin
-    - Ajout de l’individue, des Alias, le temps réel
+    - Ajout des individues, des Alias, le temps réel
   - Ajouter la configuration du Task Planner
-    - Ajout de l’individue, des Alias
+    - Ajout des individues, des Alias
   
 #### b) Comment le populator est fait ?
 
-- Parsing de fichier json prélablement fait
+- Parsing de fichier json préalablement fait
 - Ajout avec le moteur ontologique
-- Ontology manager lors du ros launch ou peut etre activer a n'import quelle moment
+- Ontology manager lors du ros launch ou peut-être activé à n'import quel moment
 - Explication de processus dans le code avec owlready2
 
 ### 3) Run Time (boucle temps réel)
 
-#### a) Role du run time
+#### a) Rôle du run time
 
-- Etre run time pour que l'ontology représente en live le réel
+- Être run time pour que l'ontologie représente en live le réel
 - Boucle Integrator
   - ![Boucle Integrator](figures/IntegratorLoop.png)
 - Boucle Reader
@@ -655,41 +662,41 @@ Transition : Ajout des individues -> Setup + Run
 
 #### b) Integrateur
 
-##### i) Role de l'intégrateur
+##### i) Rôle de l'intégrateur
 
 - C'est un peu juste ça l'"anchoring"
-- Remplir l'ontologie avec des data propertie que le DT lui donne
-- Puis les faire valider par l'ontology manager pour qui infere pour creer des relations
+- Remplir l'ontologie avec des data properties que le DT lui donne
+- Puis les faire valider par l'ontologie manager pour qui infère pour créer des relations
 
 ##### ii) Comment l'intégrateur est fait ?
 
 - parsing d'un message ros
-- Ajout dans l'ontology avec le moteur ontologique
+- Ajout dans l'ontologie avec le moteur ontologique
 - Parler du processus dans le code avec les Alias/ID
-- Parler du processus dans le code pour ecraser les Data properties
-- Parler du processus dans le code pour que ce soit automatique peut importe la properties a remplir si il y a bien un alias
-- Puis les faire valider par l'ontology manager pour qui infere pour creer des relations
+- Parler du processus dans le code pour écraser les Data properties
+- Parler du processus dans le code pour que ce soit automatique, peu importe les propriétés à remplir s'il y a bien un alias
+- Puis les faire valider par l'ontology manager pour qui infère pour créer des relations
 
 #### c) Rulemaker
 
-##### i) Role du rulemaker
+##### i) Rôle du rulemaker
 
-- Ajout de regles python pour palier au probleme du SWRL
-- Regles Numpy
-- regles geometrique
+- Ajout de règles python pour palier aux problèmes du SWRL
+- Règles Numpy
+- Règles géometrique
   
 ##### ii) Comment le rulemaker est fait ?
 
-- recherche et ajout dans l'ontology avec owlready 2
-- Parler des regles
-- Parler du processus de supression de propriété fausse
+- Recherche et ajout dans l'ontology avec owlready 2
+- Parler des règles
+- Parler du processus de suppression de propriété fausse
 
 #### d) Reasonner
 
-##### i) Role du reasonner
+##### i) Rôle du reasonner
 
-- assure la coherence de l'ontology
-- infere
+- Assure la cohérence de l'ontology
+- Infère
 - Applique les SWRL rules
 - pellet / Hermit
 
@@ -699,10 +706,10 @@ Transition : Ajout des individues -> Setup + Run
 
 #### e) Reader
 
-##### i) Role du reader
+##### i) Rôle du reader
 
-- Transformer les fait sémantique de l'ontologie en predicat pour un Task Planner
-- peut transforer pour plusieurs Task Planner PDDL / HTN / ...
+- Transformer les fait sémantique de l'ontologie en prédicats pour un Task Planner
+- Peut transformer pour plusieurs Task Planner PDDL / HTN / ...
 
 ##### ii) Comment le reader est fait ?
 
@@ -711,62 +718,64 @@ Transition : Ajout des individues -> Setup + Run
 ### 4) Conclusion de l'implémentation
 
 - En python ça marche ! cad :
-  - on arrive a recuperer l'ontology desogn  de faire un raisonnement dessus puis de lui donner un no et un path dans l'implemenation
-  - puis on arrive a populer l'ontology avec unecore un raisonnement
-  - puis on arrive a remplir l'ontolgy autant de fois que l'on veut sans que cela casse l'ontolgy
-  - il y a achasue fois l'etape de raisonnement et donc l'etape de d'aapplication des regles et d'inference
+  - on arrive à récupérer l'ontologie base de faire un raisonnement dessus puis de lui donner un nom et un path dans l'implémentation
+  - puis on arrive à peupler l'ontologie, et puis, on raisonne dessus
+  - puis on arrive à remplir l'ontologie autant de fois que l'on veut sans que cela casse l'ontologie
+  - il y a, à chaque fois l'étape de raisonnement, et donc, l'étape d'application des règles et d'inférences
 
-## V - Apprentissages, critiques, autres chose à explorer
+## V - Apprentissages, critiques, autres choses à explorer
 
 ### 1) Ontologies
 
 - Apprentissages :
-  - Domain ou l'IRT a appris et mis en pratique
-  - Application de Semantique dans la robotique
+  - Domaine ou l'Intelligence Robotic Team a appris et mis en pratique
+  - Application de Sémantiques dans la robotique
   - relation symbolique
-  - Domain/Mid layer super : permet la compatiblité avec plusieurs processus avec les import ontologie incrayable
+  - Domaine/Mid layer super : permet la compatibilité avec plusieurs processus avec les imports ontologies
 - Critiques :
-  - Il faut etre expert en ontologies
-    - je n'ai moi meme pas ete rigoureux pour des expert en ontologie avec soma
+  - Il faut être expert en ontologies
+    - Je n'ai moi-même pas été rigoureux pour des experts en ontologie avec soma pour pouvoir utiliser mes algorithmes
   - interaction avec compliqué
-  - domain tres vasste et donc peu clair
-  - Schema : 2 ontologie differentes meme signification
-- Autres chose à explorer :
-  - Algo pour chaque regle (revient a ce qu'on fait avec rule maker) + SQL/DataLake
+  - Domaine de recherches très vaste, et donc peu clair
+  - Schéma : 2 ontologies différentes, même signification en terme individues
+  - ![Differentes Ontologies, même signification](figures/DiffSameOntology.png)
+- Autres choses à explorer :
+  - Algo pour chaque règle (revient à ce qu'on fait avec rule maker) comme un dictonnaire de règles / comme une librairie + SQL/Data Lake
 
 ### 2) SWRL
 
 - Apprentissages :
   - Pas de négations
-  - pas de division dans aucun des reasonner
-  - dependant du reasonner
-  - peu utilisé par la communaute
-  - déconseille de l'utilse par la communauté
-  - long pour ecrire des regle
-  - pas de var tmp
-  - pas possble d'ajouter et/ou d'écraser des Data properties
+  - Pas de division dans aucun des reasonner
+  - Dépendant du reasonner
+  - Peu utilisé par la communaute
+  - Déconseille de l'utiliser par la communauté
+  - Long pour écrire des règles
+  - Pas de var tmp
+  - Pas possible d'ajouter et / ou d'écraser des Data properties
 - Critiques :
-- Autres chose à explorer :
-  - Biblioteque de regle python en axioms
+- Autres choses à explorer :
+  - Bibliothèques de règles python en axioms
 
 ### 3) Moteur Ontologique
 
 - Apprentissages :
-  - Owlready super bien mais utilise pellet qui est lent
+  - Owlready2 super bien, mais utilise pellet qui est lent dans notre cas
 - Critiques :
-- Autres chose à explorer :
-  - Maintenant plus de SWRL + maj de ontologenius pour ROS 2 => essayé Ontologenius
+- Autres choses à explorer :
+- Essayer owlready2 avec hermiT
+  - Maintenant plus de SWRL + maj de ontologenius pour ROS 2 => essayer Ontologenius
 
 ### 4) Algorithme
 
 - Apprentissages :
   - Fiable
-  - Pas Asez complet
+  - Pas assez complet
   - Pas eu le temps de suffisament le test
   - Simple
-  - Grosse dependance de la qualité de l'ontologie de base
+  - Grosse dépendance de la qualité de l'ontologie de base
 - Critiques :
-- Autres chose à explorer :
+- Autres choses à explorer :
 
 ### 5) Design
 
@@ -775,38 +784,45 @@ Transition : Ajout des individues -> Setup + Run
   - Pas automatique
   - Pas import
   - En un seul bloc
-- Autres chose à explorer :
-  - Le faire automatiquement en dennat une UPPER les differentes nodes ros pour definir les domain ontologies a prendre et le tout avec des import
+- Autres choses à explorer :
+  - Le faire automatiquement en donnant une UPPER les différentes nodes ros pour définir les domaines ontologies à prendre et le tout avec des imports
 
 ### 6) Setup
 
 - Apprentissages :
 - Critiques :
-- Autres chose à explorer :
-  - Creer les ficheir de setup de node automatiquement
-  - Creer le fichier des setup de la situation automatiquement
+- Autres choses à explorer :
+  - Créer les fichiers de setup de node automatiquement
+  - Créer le fichier des setup de la situation automatiquement
 
 ### 7) Intergrator
 
 - Apprentissages :
+  - Le système d'Alias est vraiment bien, permet de faire automatiquement l'intégration et une haute compatibilité
 - Critiques :
-- Autres chose à explorer :
+- Autres choses à explorer :
 
 ### 8) RuleMaker
 
 - Apprentissages :
+  - Utilisé l'API owlready2 avec les librairies python ça marches bien
 - Critiques :
-- Autres chose à explorer :
+  - Après de multiples tentatives avec le SWRL dommage de ne pas pouvoir mettre les règles directement dans l'ontologie
+- Autres choses à explorer :
+  - DSL : domaine spécifique langage pour pouvoir mettre les règles dans l'ontologie
+  - Dans un plus court termes, faire une librairie dépendante certes l'api ontologique, est je pense une bonne idée comme dit plus haut
 
 ### 9) Reasonner
 
 - Apprentissages :
   - Pellet c'est bien
   - pellet c'est puissant
-  - Pellet necessaire pour SWRL
+  - Pellet nécessaire pour SWRL
 - Critiques :
-- Autres chose à explorer :
-  - On pourrait essayer Hermit ou essayer un resonner tiers plus rapide => Ontologenius
+  - Lent
+  - Boite noir
+- Autres choses à explorer :
+  - On pourrait essayer Hermit ou essayer un raisonneur tiers plus rapide => Ontologenius
 
 ### Moi-même
 
@@ -820,15 +836,15 @@ Transition : Ajout des individues -> Setup + Run
   - Ontologie
 - Critiques :
   - mauvaise estimation du temps
-- Autres chose à explorer :
 
-### Suite a donner au projet
+### Suite à donner au projet
 
-- Travailler avec d'autre département en interne car il y a un certains nombre de projet interne avec l'utilisation de soit des jumeaux numérique ou soit des ontologies dans differents domaines
-- Implémentation du design avec des imports d'ontologie 
+- Travailler avec d'autres départements en interne au CEA, car il y a une multitude de projets internes avec l'utilisation de, soit des jumeaux numériques ou soit, des ontologies dans différents domaines
+- Implémentation du design avec des imports d'ontologie
 - Utilisation de plusieurs upper ontologie
-- automatisé le setup
-- Un expert en ontologie viennent rectifier les errerus dans l'ontologies et ajoute de l'intelligence dans les algorithme
+- Automatisé le setup
+- Un expert en ontologie viennent rectifier les erreurs dans l'ontologie et ajouter de l'intelligence dans les algorithmes
+- Regarder les choses à améliorer écrit plus haut
 
 ## Conclusion
 
